@@ -21,6 +21,7 @@ struct Matrix {
     Matrix<T> transpose() const;
     void display() const;
     T determinant() const;
+    Matrix<T> inverse() const;
 };
 
 
