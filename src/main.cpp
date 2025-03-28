@@ -1,6 +1,13 @@
 #include "../include/Defines.hpp"
 #include "../include/ui/TypeText.hpp"
+
 #include "../include/temp/Matrix.hpp"
+#include "../include/temp/Vector.hpp"
+
+// Encryptions
+#include "../include/core/Encryptor.hpp"
+
+#include "../include/utils/ASCIIHandler.hpp"
 
 #include <iostream>
 
@@ -22,6 +29,33 @@ int main() {
 
     std::cout << "Inverse of the m2 matrix: " << std::endl;
     m2Inverse.display();
+
+
+    ASCIIHandler::printFromASCIIHandler();
+    string ASCII = ASCIIHandler::stringToASCII("Hello, World!");
+    std::cout << R"(This is the ASCII for "Hello, World!": )" << ASCII << std::endl;
+
+    // encrypt();
+
+    // Initialize a 1×3 row vector with example values
+    Vector<double> rowVec({1.0, 2.0, 3.0});
+
+    // Initialize a 3×3 matrix with example values
+    Matrix<double> mat({{
+        {4.0, 5.0, 6.0},
+        {7.0, 8.0, 9.0},
+        {10.0, 11.0, 12.0}
+    }});
     
+    // Perform the multiplication
+    Vector<double> result = rowVec * mat;
+
+    // Output the result
+    std::cout << "Resulting 1×3 Vector:\n";
+    for (const auto& val : result.rowVector) {
+        std::cout << val << ' ';
+    }
+    std::cout << std::endl;
+
     return 0;
 }

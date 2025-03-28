@@ -8,6 +8,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED YES)
 add_executable(${PROJECT_NAME}
     src/Main.cpp
     src/imp/TypeText.cpp
+    src/imp/ASCIIHandler.cpp
+    src/imp/Encryptor.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PRIVATE include)
