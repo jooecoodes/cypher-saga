@@ -1,5 +1,5 @@
-#include "../include/ui/TypeText.hpp"
-#include "../include/Defines.hpp"
+#include "../../include/ui/TypeText.hpp"
+#include "../../include/Defines.hpp"
 #include <iostream>
 #include <chrono>
 #include <thread>
