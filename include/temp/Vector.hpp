@@ -1,7 +1,7 @@
 #pragma once
 
 #include <array>
-#include "Matrix.hpp"  // Ensure Matrix<T> is defined
+#include "Matrix.hpp"  
 
 template <typename T>
 struct Vector {

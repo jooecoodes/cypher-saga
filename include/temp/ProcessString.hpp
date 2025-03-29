@@ -2,8 +2,8 @@
 
 #include <vector>
 #include <string>
-#include "Vector.hpp"   // Ensure your Vector<T> is declared/defined here.
-#include "Matrix.hpp"   // Ensure your Matrix<T> is declared/defined here.
+#include "Vector.hpp"  
+#include "Matrix.hpp"  
 
 template <typename T>
 std::vector<Vector<T>> processStringToVectors(const std::string& input, const Matrix<T>& mat);
