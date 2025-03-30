@@ -1,9 +1,11 @@
 #include "../include/Defines.hpp"
-#include "../include/ui/TypeText.hpp"
 
 #include "../include/temp/Matrix.hpp"
 #include "../include/temp/Vector.hpp"
 #include "../include/temp/ProcessString.hpp"
+
+// UI
+#include "../include/ui/UI.hpp"
 
 // Encryptions
 #include "../include/core/Encryptor.hpp"
@@ -15,7 +17,7 @@
 #include <iostream>
 
 int main() {
-    UITypeText::typeText("Hello, World!", 100, UIConstants::RED);
+    UI::typeText("Hello World", 100, Constants::GREEN);
 
     Matrix<double> m1 = Matrix<double>( { { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } } } );
     Matrix<double> m2 = Matrix<double>( { { { 2, 4, 1 }, { 7, 2, 2 }, { 6, 2, 4 } } } );

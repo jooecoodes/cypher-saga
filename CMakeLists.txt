@@ -7,9 +7,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED YES)
 # Add all source files
 add_executable(${PROJECT_NAME}
     src/Main.cpp
-    src/imp/TypeText.cpp
     src/imp/ASCIIHandler.cpp
     src/imp/Encryptor.cpp
+    src/imp/UI.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PRIVATE include)

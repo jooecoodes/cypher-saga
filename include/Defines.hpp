@@ -2,7 +2,7 @@
 #include <string>
 using std::string;
 
-namespace UIConstants {
+namespace Constants {
     // front end global constants
     inline const string  RED = "\033[1;31m";
     inline const string  GREEN = "\033[1;32m";
