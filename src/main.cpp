@@ -17,6 +17,9 @@
 #include <iostream>
 
 int main() {
+    UI::exitDisplay();
+    UI::introDisplay();
+    UI::loadingBar("Loading", 1000, 90);
     UI::typeText("Hello World", 100, Constants::GREEN);
 
     Matrix<double> m1 = Matrix<double>( { { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } } } );
@@ -116,6 +119,8 @@ int main() {
         std::cout << std::endl;
     }
 
+
+    
     
     return 0;
 }
