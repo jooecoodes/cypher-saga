@@ -9,7 +9,6 @@ set(CMAKE_INTERPROCEDURAL_OPTIMIZATION ON) # remove unused codes
 # Add all source files
 add_executable(${PROJECT_NAME}
     src/Main.cpp
-    src/imp/ASCIIHandler.cpp
     src/imp/Core.cpp
     src/imp/UI.cpp
 )
