@@ -29,3 +29,20 @@ std::vector<Vector<T>> processStringToVectors(const std::string& input, const Ma
     }
     return results;
 }
+template <typename T>
+std::string processVectorsToString(const std::vector<Vector<T>> &vectors) {
+    std::string result;
+
+    for (const auto& vec : vectors) {
+        for (const auto& val : vec.rowVector) {  // Directly iterate rowVector
+            result.push_back(static_cast<char>(val));
+        }
+    }
+
+    // Trim trailing spaces that were added during padding.
+    while (!result.empty() && result.back() == ' ') {
+        result.pop_back();
+    }
+
+    return result;
+}
