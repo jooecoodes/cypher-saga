@@ -15,21 +15,21 @@ int main() {
     std::vector<Vector<double>> encryptResult = Core::encryptedVectors(input, mat);
     std::vector<Vector<double>> decryptResult = Core::decryptedVectors(encryptResult, mat);
 
-    std::cout << "This is for encryptResult" << std::endl;
-    for (const auto &vec : encryptResult) {
-        for (const auto &val : vec.rowVector) {
-            std::cout << val << " ";
-        }
-        std::cout << std::endl;
-    }
+    // std::cout << "This is for encryptResult" << std::endl;
+    // for (const auto &vec : encryptResult) {
+    //     for (const auto &val : vec.rowVector) {
+    //         std::cout << val << " ";
+    //     }
+    //     std::cout << std::endl;
+    // }
 
-    std::cout << "This is for decryptResult" << std::endl;
-    for (const auto &vec : decryptResult) {
-        for (const auto &val : vec.rowVector) {
-            std::cout << val << " ";
-        }
-        std::cout << std::endl;
-    }
+    // std::cout << "This is for decryptResult" << std::endl;
+    // for (const auto &vec : decryptResult) {
+    //     for (const auto &val : vec.rowVector) {
+    //         std::cout << val << " ";
+    //     }
+    //     std::cout << std::endl;
+    // }
 
     std::string resultFromVectors = processVectorsToString<double>(decryptResult);
     std::cout << "This is the result for decryption: " << resultFromVectors << std::endl;
