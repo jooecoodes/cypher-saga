@@ -1,4 +1,3 @@
-// Encryptions
 #include "../include/core/Core.hpp"
 
 #include "../include/ui/UI.hpp"
