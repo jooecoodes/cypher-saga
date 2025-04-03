@@ -1,9 +1,5 @@
 #include "../include/core/Core.hpp"
-
 #include "../include/ui/UI.hpp"
-#include "../include/temp/Matrix.hpp"
-#include "../include/temp/Vector.hpp"
-
 #include "../include/utils/Utils.hpp"
 
 #include <iostream>
@@ -27,8 +23,7 @@ int main()
         std::getline(std::cin, choice);
 
         int choiceInInt = Utils::toIntForChoice(choice);
-        string sentenceToEncrypt, sentenceToDecrypt;
-        
+        string sentenceToEncrypt, sentenceToDecrypt; 
 
         switch (choiceInInt)
         {
@@ -39,8 +34,8 @@ int main()
             Core::decryptionPart();
             break;
         case 3:
+            UI::exitDisplay();
             sentinel = false;
-
             break;
         default:
 
