@@ -11,6 +11,7 @@ add_executable(${PROJECT_NAME}
     src/Main.cpp
     src/imp/Core.cpp
     src/imp/UI.cpp
+    src/imp/Utils.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PRIVATE include)

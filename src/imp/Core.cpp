@@ -3,6 +3,9 @@
 #include "../../include/temp/Vector.hpp"
 #include "../../include/temp/ProcessString.hpp"
 
+#include "../../include/ui/UI.hpp"
+#include "../../include/utils/Utils.hpp"
+
 #include <cstdlib>
 #include <iostream>
 #include <string>
@@ -81,6 +84,24 @@ namespace Core
         }
 
         return finalVectors;
+    }
+
+    void encryptionPart(std::string &sentenceToEncrypt) {
+        UI::sentenceInputAndValidation(sentenceToEncrypt);
+        std::vector<Vector<double>> vectoredSentence = Utils::stringToVectors(sentenceToEncrypt);
+        Utils::displayResult(vectoredSentence, "This is the results for encrypted vectors: ");
+    }
+    
+    void decryptionPart() {
+        std::string inputVectorsString;
+    
+        std::cout << "Enter the vectors separated by spaces: " << std::endl;
+        getline(std::cin, inputVectorsString);
+    
+        std::string decryptedMessage = Utils::vectorsToString(Utils::stringChunkToVectors(inputVectorsString));
+        Utils::displayResult(Utils::stringChunkToVectors(inputVectorsString), "This is the vectors from the string: ");
+    
+        std::cout << "Here is the decrypted message: " << decryptedMessage << std::endl;
     }
 
 }
