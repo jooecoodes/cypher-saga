@@ -1,8 +1,5 @@
 
 #include "../../include/temp/Vector.hpp"
-#include "../../include/temp/Matrix.hpp"
-
-#include <array>
 
 // Default constructor: initialize rowVector with default values.
 template <typename T>

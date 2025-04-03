@@ -1,19 +1,5 @@
+
 #include "../../include/core/Core.hpp"
-#include "../../include/temp/Matrix.hpp"
-#include "../../include/temp/Vector.hpp"
-#include "../../include/temp/ProcessString.hpp"
-
-#include "../../include/ui/UI.hpp"
-#include "../../include/utils/Utils.hpp"
-
-#include <cstdlib>
-#include <iostream>
-#include <string>
-#include <vector>
-
-using std::cin;
-using std::string;
-using std::vector;
 
 namespace Core
 {

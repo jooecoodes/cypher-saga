@@ -3,6 +3,8 @@
 #include <array>
 #include "Matrix.hpp"  
 
+#include <array>
+
 template <typename T>
 struct Vector {
     std::array<T, 3> rowVector;
