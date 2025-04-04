@@ -38,9 +38,7 @@ int main()
             sentinel = false;
             break;
         default:
-
             UI::invalidDisplay("Invalid Selection");
-
             break;
         }
     }
