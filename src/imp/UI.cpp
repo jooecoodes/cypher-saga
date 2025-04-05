@@ -1,8 +1,4 @@
 #include "../../include/ui/UI.hpp"
-#include "../../include/Defines.hpp"
-#include <iostream>
-#include <chrono>
-#include <thread>
 
 using std::cout;
 using std::string;
@@ -112,7 +108,7 @@ namespace UI {
     }
     void introDisplay()
     {
-        notchDisplay(); typeText("Welcome to CypherSaga, this is a program made by the group of Bologa (The Chess God).", 10, Constants::GREEN); cout << std::endl;
+        notchDisplay(); typeText("Welcome to CypherSaga", 10, Constants::GREEN); cout << std::endl;
         notchDisplay(); typeText("This program is a simple encryption and decryption program that uses a 3x3 matrix.", 10, Constants::GREEN); cout << std::endl;
         notchDisplay(); typeText("The program will ask you to input a message and a key.", 10, Constants::GREEN); cout << std::endl;
         notchDisplay(); typeText("The key must be a 4 digit number.", 10, Constants::GREEN); cout << std::endl;
@@ -177,7 +173,8 @@ namespace UI {
         typeText("***", 5, Constants::CYAN);
         typeText("]", 5, Constants::RESET);
 
-        typeText(" Developed by the 5 Top G's ", 5, Constants::RED);
+        typeText(" Developed by ", 5, Constants::RED);
+        typeText("Joe Villacorta ", 5, Constants::CYAN);
 
         typeText("[", 5, Constants::RESET);
         typeText("***", 5, Constants::CYAN);
@@ -187,18 +184,12 @@ namespace UI {
         cout << std::endl;
         cout << std::endl;
 
-        memberDisplay("Bologa", "The Leader, Chess God, Best Programmer Perk, Logic boy, 1v1, EZ");
-        memberDisplay("Villacorta", "The Designer, UI/UX Boi, IDK, Yeah");
-        memberDisplay("Recopelacion", "Roblox Studio God, Best Programmer Perk, Java Hater");
-        memberDisplay("Herrero", "Oldest, Ain't playing, Speaks HTML CSS JS for fun");
-        memberDisplay("Paul", "The Best Writer, Poet, Linear Algebra");
-
         joesCatDisplay();
         
         cout << std::endl;
 
         notchDisplay();
-        typeText("Thank you for using our program :)", 10, Constants::RED);
+        typeText("Thank you for using the program :)", 10, Constants::RED);
 
         cout << std::endl;
 
