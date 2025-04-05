@@ -108,10 +108,10 @@ namespace UI {
     {
         notchDisplay(); typeText("Welcome to CypherSaga", 10, Constants::GREEN); cout << std::endl;
         notchDisplay(); typeText("This program is a simple encryption and decryption program that uses a 3x3 matrix.", 10, Constants::GREEN); cout << std::endl;
-        notchDisplay(); typeText("The program will ask you to input a message and a key.", 10, Constants::GREEN); cout << std::endl;
-        notchDisplay(); typeText("The key must be a 4 digit number.", 10, Constants::GREEN); cout << std::endl;
-        notchDisplay(); typeText("The program will then encrypt the message using the key and display the encrypted message.", 10, Constants::GREEN); cout << std::endl;
-        notchDisplay(); typeText("The program will also decrypt the message using the key and display the decrypted message.", 10, Constants::GREEN); cout << std::endl;
+        notchDisplay(); typeText("The program will ask you to input a message and a 3x3 matrix.", 10, Constants::GREEN); cout << std::endl;
+        notchDisplay(); typeText("The 3x3 matrix will be used to encrypt and decrypt the message.", 10, Constants::GREEN); cout << std::endl;
+        notchDisplay(); typeText("The program will then encrypt the message and display the encrypted message.", 10, Constants::GREEN); cout << std::endl;
+        notchDisplay(); typeText("The program will also decrypt the message and display the decrypted message.", 10, Constants::GREEN); cout << std::endl;
         notchDisplay(); typeText("Enjoy!", 10, Constants::GREEN); cout << std::endl;
     }
     void breakDisplay(int n)
