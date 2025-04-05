@@ -77,12 +77,10 @@ namespace UI {
     }
     void joesCatDisplay()
     {
-    cout << "\033[4A";
-
-        cout << Constants::RED << "\033[72G" << "        |\\      _,,,---,,_" << Constants::RESET << std::endl;
-        cout << Constants::RED << "\033[72G" << "  ZZZzz /,`.-'`'    -.  ;-;;,_" << Constants::RESET << std::endl;
-        cout << Constants::RED << "\033[72G" << "       |,4-  ) )-,_. ,\\ (  `'-'" << Constants::RESET << std::endl;
-        cout << Constants::RED << "\033[72G" << "      '---''(_/--'  `-'\\_)" << Constants::RESET << std::endl;
+        cout << Constants::RED << "        |\\      _,,,---,,_" << Constants::RESET << std::endl;
+        cout << Constants::RED << "  ZZZzz /,`.-'`'    -.  ;-;;,_" << Constants::RESET << std::endl;
+        cout << Constants::RED << "       |,4-  ) )-,_. ,\\ (  `'-'" << Constants::RESET << std::endl;
+        cout << Constants::RED << "      '---''(_/--'  `-'\\_)" << Constants::RESET << std::endl;
     }
     void notchDisplay()
     {
@@ -181,6 +179,7 @@ namespace UI {
         typeText("]", 5, Constants::RESET);
         
 
+        cout << std::endl;
         cout << std::endl;
         cout << std::endl;
 
