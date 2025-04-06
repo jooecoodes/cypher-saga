@@ -17,4 +17,5 @@ namespace Utils {
     std::string vectorsToString(const std::vector<Vector<double>> &encryptedVectorsResult);
     void displayResult(const std::vector<Vector<double>> vector, const std::string &desc);
     std::vector<Vector<double>> stringChunkToVectors(const std::string &numbersString);
+    void sentinelOff(bool &sentinel);
 }

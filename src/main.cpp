@@ -35,7 +35,7 @@ int main()
             break;
         case 3:
             UI::exitDisplay();
-            sentinel = false;
+            Utils::sentinelOff(sentinel);
             break;
         default:
             UI::invalidDisplay("Invalid Selection");

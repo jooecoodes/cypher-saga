@@ -83,4 +83,8 @@ namespace Utils
 
         return vectors;
     }
+    void sentinelOff(bool &sentinel)
+    {
+        sentinel = false;
+    }
 }
