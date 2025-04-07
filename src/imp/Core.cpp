@@ -23,8 +23,6 @@ namespace Core
             std::cout << std::endl;
         }
 
-        // Multiplying to m2 matrix
-        std::cout << "Vectors multiplied by m2 Matrix:\n";
         vector<Vector<double>> preVectors;
 
         for (const auto &vec : vectors)
@@ -32,17 +30,6 @@ namespace Core
             // Multiply the vector by the given matrix.
             Vector<double> product = vec * matrix;
             preVectors.push_back(product);
-        }
-
-        std::cout << "This is the result of multiplying each processed vector by the matrix:\n";
-
-        for (const auto &vec : preVectors)
-        {
-            for (const auto &val : vec.rowVector)
-            {
-                std::cout << val << ' ';
-            }
-            std::cout << std::endl;
         }
 
         return preVectors;
