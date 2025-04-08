@@ -11,7 +11,7 @@ struct Vector {
 
     // Constructor declarations
     Vector();
-    Vector(std::array<T, 3> vec); // Changed parameter name from "Vector" to "vec"
+    Vector(std::array<T, 3> vec);
 
     // Operator declaration: Multiply this 1x3 row vector by a 3x3 matrix.
     Vector<T> operator*(const Matrix<T>& mat) const;
