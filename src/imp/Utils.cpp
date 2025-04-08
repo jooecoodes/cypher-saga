@@ -30,7 +30,6 @@ namespace Utils
                              {10.0, 11.0, 12.0}}});
         std::vector<Vector<double>> decryptedVectorsResult = Core::decryptedVectors(encryptedVectorsResult, mat);
         std::string resultFromVectors = processVectorsToString<double>(decryptedVectorsResult);
-        std::cout << "This is the result for decryption: " << resultFromVectors << std::endl;
         return resultFromVectors;
     }
 
