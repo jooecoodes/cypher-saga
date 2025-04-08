@@ -4,7 +4,6 @@ using std::string;
 
 namespace Constants {
     constexpr int ASCIIForHyphen = 45;
-    // front end global constants
     inline const string  RED = "\033[1;31m";
     inline const string  GREEN = "\033[1;32m";
     inline const string  CYAN = "\033[1;36m";
