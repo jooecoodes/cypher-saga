@@ -10,7 +10,6 @@
 CypherSaga is a C++ application that demonstrates matrix-based encryption and decryption techniques using linear algebra operations. The project showcases:
 
 - **3×3 matrix operations** for cryptographic transformations  
-- **Customizable encryption/decryption workflows**  
 - **Modern C++ features** including templates and standard library components
 
 ## ✨ Features
