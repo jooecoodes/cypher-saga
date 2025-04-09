@@ -164,9 +164,6 @@ namespace UI {
     {
         cout << std::endl;
 
-        // cout << "[" << CYAN << "***" << RESET << "] ";
-        // cout << RED << "Developed by the 4 Top G's " << RESET;
-        // cout << "[" << CYAN << "***" << RESET << "] ";
         typeText("[", 5, Constants::RESET);
         typeText("***", 5, Constants::CYAN);
         typeText("]", 5, Constants::RESET);
